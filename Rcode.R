@@ -10,6 +10,9 @@ map <- map %>% addCircles(lat = coordinates$lat, lng = coordinates$lng)
 map
 
 
+
+# access token not to used
+
 library(mapdeck)
 options(mapbox.accessToken = p$mapboxkey)
 library(mapdeck)
