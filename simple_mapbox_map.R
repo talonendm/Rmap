@@ -15,20 +15,24 @@
 p <- list()
 p$mapboxkey <- Sys.getenv("MAPBOX_TOKEN") # note restart session if not working at first time
 
-
-library(plotKML)
-library(dplyr)
-gpxlist <- c('9_21_20 16_53.gpx')
-gpxfiles <- paste0('C:\\data\\sportstracker_ebike\\',gpxlist)
-gpxfiles
-gpxfiles <- 'https://github.com/talonendm/Rmap/blob/master/data/ebike/9_21_20%2016_53.gpx'
-
-
-df <- readLines(gpxfiles)
-
-fells_loop <- readGPX("http://www.topografix.com/fells_loop.gpx")
-str(fells_loop)
-
+if (FALSE) {
+  # setup  
+  
+  library(plotKML)
+  library(dplyr)
+  gpxlist <- c('9_21_20 16_53.gpx')
+  gpxfiles <- paste0('C:\\data\\sportstracker_ebike\\',gpxlist)
+  gpxfiles
+  gpxfiles <- 'https://github.com/talonendm/Rmap/blob/master/data/ebike/9_21_20%2016_53.gpx'
+  
+  
+  df <- readLines(gpxfiles)
+  
+  # not working fells_loop <- readGPX("http://www.topografix.com/fells_loop.gpx")
+  
+} else {
+  
+}
 
 # .....................................
 loca <- list()
