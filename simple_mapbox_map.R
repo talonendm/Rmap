@@ -21,6 +21,15 @@ library(dplyr)
 gpxlist <- c('9_21_20 16_53.gpx')
 gpxfiles <- paste0('C:\\data\\sportstracker_ebike\\',gpxlist)
 gpxfiles
+gpxfiles <- 'https://github.com/talonendm/Rmap/blob/master/data/ebike/9_21_20%2016_53.gpx'
+
+
+df <- readLines(gpxfiles)
+
+fells_loop <- readGPX("http://www.topografix.com/fells_loop.gpx")
+str(fells_loop)
+
+
 # .....................................
 loca <- list()
 i <- 0
