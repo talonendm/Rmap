@@ -93,3 +93,11 @@ map <- mapdeck(location = location, style = mapdeck_style("outdoors") , pitch = 
 # c("MAPBOX_TOKEN","MAPBOX_KEY","MAPBOX_API_TOKEN", "MAPBOX_API_KEY", "MAPBOX", "MAPDECK")
 # If multiple tokens are found, the first one is used
 print(map)
+
+
+# test:
+# source('C:/github/Rmap/simple_mapbox_map.R', encoding = 'UTF-8')
+
+# https://rstudio.github.io/renv/articles/renv.html
+# install.packages('renv')
+
